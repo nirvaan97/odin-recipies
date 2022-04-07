@@ -1,6 +1,6 @@
 :root{
     box-sizing:border-box;
-    font-size: 0.875em;
+    /* font-size: 0.875em; */
 }
 
 *,::after,::before{
@@ -8,6 +8,7 @@
 }
 
 body{
+    font-size: 1rem;
     font-family: sans-serif;
     background-color: rgb(207, 204, 204);
 
@@ -23,12 +24,12 @@ body *+*{
 .header-main .heading-main{
     font-family: serif;
     font-weight: 500;
-    
+    padding-bottom: 1em;
     margin:0;
     font-size: 3rem;
    
-    border-radius: 0.3em;
-    padding:1em  0 1.5em  0;
+    border-radius: 0.2em;
+    
     text-align:center;
     background-color: rgb(233, 225, 225);
     /* vertical-align: middle; */
@@ -91,4 +92,8 @@ div{
 }
 .navigation-item:active{
     
+}
+img{
+    width:400px;
+    height:auto;
 }

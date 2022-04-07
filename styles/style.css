@@ -1,45 +1,94 @@
 :root{
-    box-sizing: border-box;
-    font-size:calc(0.5em + 1vw);
+    box-sizing:border-box;
+    font-size: 0.875em;
+}
+
+*,::after,::before{
+    box-sizing: inherit;
 }
 
 body{
-    background-color:#ffffff;
-    /* color:rgb(109, 7, 7); */
-    margin: 0;
-    height:100vh;
-}
-
-h1{
-    border-bottom: 7px solid black;
-    text-align: center;
-    padding: .5em;
-    margin: 0;
-    background-color: rgb(226, 226, 226);
-}
-nav{
-    background-color: rgb(224, 224, 224);
-    padding:0.5em;
-    margin:0.5em
-}
-
-nav >ul{
-    padding-left: 30%;
-    list-style: none;
+    font-family: sans-serif;
+    background-color: rgb(207, 204, 204);
 
 }
-nav ul li{
+
+body *+*{
+    margin-top: 1.5em;
+}
+.header-main{
+   
+}
+
+.header-main .heading-main{
+    font-family: serif;
+    font-weight: 500;
     
-    display: inline-block;
-    margin-right: 0.5em;
-    padding: 0.5em;
-    border-radius: 0.5em;
-    background-color: rgb(255, 255, 255);
+    margin:0;
+    font-size: 3rem;
+   
+    border-radius: 0.3em;
+    padding:1em  0 1.5em  0;
+    text-align:center;
+    background-color: rgb(233, 225, 225);
+    /* vertical-align: middle; */
 }
-li > a{
-    text-decoration: none;
-    color:black;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    color:rgb(109, 7, 7)
+
+
+.navigation-list{
+    /* text-align: center; */
+    list-style: none;
+    
+    padding: 0;
+    margin: 0;
+    background-color: rgb(228, 222, 222);
+    border-radius: 0.3em;
+  
+
+}
+
+
+
+.navigation-list li {
+    display: inline-block;
+    padding:1.5em;
+   
+}
+
+/* removing the labotomised owl styles */
+li:nth-of-type(2){
+    margin-top: 0;
+    
+}
+
+div{
+    border:0.5px solid red;
+    display: inline-block;
+    margin-bottom: 0.3em;
+    width: 2.4%;
+}
+
+.navigation-item:link{
+
+        /* padding: 1em; */
+        border-bottom: 1.5px solid black;
+        text-decoration: none;
+        /* border-radius: 1.5em; */
+        padding: 1.3em;
+        color:rgb(61, 60, 60);
+        /* background-color: rgb(59, 57, 57); */
+        text-transform: uppercase;
+        font-weight: 200;
+       
+    
+}
+.navigation-item:visited{
+    color: rgb(228, 104, 104);
+}
+.navigation-item:hover{
+    color:rgb(61, 60, 60);
+    border-bottom:1.5px solid red;
+}
+.navigation-item:active{
+    
 }
